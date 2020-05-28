@@ -315,6 +315,111 @@ $$
 
 对于线性回归中使用的成本函数$J(θ_0,θ_1)$的具体选择，不存在局部最优（除全局最优外）。
 
+# 线性代数(linear algebra)
+矩阵(matrix)和向量(vector),
+矩阵是二维数组(2-dimensional arrays)。
+$$
+\begin{bmatrix} 
+a&b&c 
+\\ 
+d&e&f 
+\\ 
+g&h&i 
+\\ 
+j&k&l 
+\\ 
+\end{bmatrix} 
+$$
+上述矩阵有4行3列，所以是4×3的矩阵。
+
+一个向量是一个有一列多行的矩阵。
+$$
+\begin{bmatrix} 
+a
+\\ 
+d
+\\ 
+g
+\\ 
+j
+\\ 
+\end{bmatrix} 
+$$
+所以向量是矩阵的一个子集。上面的向量是一个4×1的矩阵。
+
+符号和术语(Notation and terms)：
+
+$A_{ij}$是指矩阵A的第i行和第j列中的元素。
+
+一个有'n'行的向量被称为'n'维向量。
+
+$v_i$指的是向量的第i行中的元素。
+
+一般来说，我们所有的向量和矩阵都是1索引(开始)的。注意，对于某些编程语言，数组是0索引(开始)的。
+
+矩阵通常用大写的名称来表示，而向量是小写的。
+
+"Scalar "(标量)是指对象是一个单一的值，而不是向量或矩阵。
+
+$\Bbb{R}$是指标量(scalar)实数的集合。
+
+$\Bbb{R}^n$指的是n维实数(real numbers)向量的集合。
+
+```Matlab
+% The ; denotes we are going back to a new row.
+A = [1, 2, 3; 4, 5, 6; 7, 8, 9; 10, 11, 12]
+%{
+A =
+    1    2    3
+    4    5    6
+    7    8    9
+   10   11   12
+%}
+
+% Initialize a vector 
+v = [1;2;3] 
+%{
+v =
+   1
+   2
+   3
+%}
+
+% Get the dimension of the matrix A where m = rows and n = columns
+[m,n] = size(A)
+%{
+m =  4
+n =  3
+%}
+
+% You could also store it this way
+dim_A = size(A)
+%{
+dim_A =
+   4   3
+%}
+
+% Get the dimension of the vector v 
+dim_v = size(v)
+%{
+dim_v =
+   3   1
+%}
+
+% Now let's index into the 2nd row 3rd column of matrix A
+A_23 = A(2,3)
+%{
+A_23 =  6
+%}
+```
+
+
+
+
+
+
+
+
 
 
 
