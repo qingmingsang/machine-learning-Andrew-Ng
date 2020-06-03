@@ -4,7 +4,7 @@
 
 [week1](./week1/README.md)
 
-[week2](./week2/README.md)
+[week2](./week2/readme.md)
 
 
 # 什么是机器学习？
