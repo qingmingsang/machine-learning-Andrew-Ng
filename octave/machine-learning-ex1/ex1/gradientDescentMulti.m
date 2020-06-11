@@ -19,9 +19,11 @@ for iter = 1:num_iters
 
 
 
-
-
-
+        predictions = X*theta;
+        errors = (predictions-y);
+        sums = X'*errors;
+        delta = 1/m*sums;
+        theta = theta - alpha*delta;
 
 
 

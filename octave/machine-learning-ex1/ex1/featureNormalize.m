@@ -28,9 +28,9 @@ sigma = zeros(1, size(X, 2));
 
 
 
-
-
-
+  mu = mean(X);       %  mean value
+  sigma = std(X);     %  standard deviation
+  X_norm = (X-mu) ./ sigma;
 
 
 
